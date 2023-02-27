@@ -1,7 +1,14 @@
 ---
+import Tag from './Tag.astro';
 export interface Props {
 	title: string;
-	items: string[];
+	items: TechItem[];
+}
+
+export interface TechItem{
+	name: string;
+	url: string
+	basics?: boolean
 }
 
 const { title, items} = Astro.props;
@@ -14,11 +21,19 @@ const { title, items} = Astro.props;
 		</h3>
 	</header>
 	<p>
-		{items.map(item => <li>{item}</li>)}
+		{items.map(item => <li><a href={item.url}>{item.name}</a> {item.basics ? <Tag text="Basics"/>:null} </li>)}
 	</p>
 	</div>
 
 <style>
+	a{
+		text-decoration: none;
+		color: #444;
+		font-weight: lighter;
+	}
+	a:hover{
+		font-weight: normal;
+	}
     .layout-card{
 		list-style: none;
 		display: flex;
@@ -29,6 +44,7 @@ const { title, items} = Astro.props;
 	}
 	.typography-card{
 		color: #444;
+		line-height: 1.3rem;
 	}
 	.layout-card header{
 		/* background-color: red; */

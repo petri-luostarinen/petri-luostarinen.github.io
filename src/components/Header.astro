@@ -7,10 +7,11 @@ export interface Props {
     addressCountry?: string;
     addressStreet?: string;
     addressCity?: string;
+    googleMapsLink?: string;
     linkedin: string;
 }
 
-const { title, phoneNum, email, addressStreet, addressCity, addressCountry, linkedin } = Astro.props;
+const { title, phoneNum, email, googleMapsLink, addressCity, addressCountry, linkedin } = Astro.props;
 ---
 
 <div class="layout-header typography-header">
@@ -20,10 +21,10 @@ const { title, phoneNum, email, addressStreet, addressCity, addressCountry, link
     </div>
     <div class="right">
         <ul class="contact-info-layout contact-info-typography">
-            <li><a href={`mailto: ${email}`}>{email}</a><span>✉️</span> </li>
-            <li><p>{phoneNum}</p><span>📱</span> </li>
-            <li> <p>{addressCountry}, {addressCity}</p> <span>📍</span></li>
-            <li><a href={linkedin}>Linkedin</a><span>🌐</span></li>
+            <li><a aria-label="email address" href={`mailto: ${email}`}>{email}</a><span>✉️</span> </li>
+            <li><a href={`tel:${phoneNum}`}aria-label="phone number" >{phoneNum}</a><span>📱</span> </li>
+            <li> <a aria-label="location" href={googleMapsLink} target="_blank">{addressCountry}, {addressCity}</a> <span>📍</span></li>
+            <li><a aria-label="social media" href={linkedin} target="_blank">Linkedin</a><span>🌐</span></li>
         </ul>
     </div>
     

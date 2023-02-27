@@ -4,6 +4,7 @@ import Card from '../components/Card.astro';
 import JobDescription from '../components/JobDescription.astro';
 import TechStackCard from '../components/TechStackCard.astro';
 import Header from '../components/Header.astro';
+import tech_items from '../../content/tech_items.json'
 ---
 
 <Layout title="CV - Petri Luostarinen">
@@ -12,7 +13,8 @@ import Header from '../components/Header.astro';
 		<Header
 		title="CV - Petri Luostarinen"
 		addressCountry="Finland"
-		addressCity="Sipoo"
+		addressCity="Västerskåg"
+		googleMapsLink = "https://goo.gl/maps/zSq2wm17pPAfXJH6A"
 		email="petri0809@gmail.com"
 		phoneNum="+358407312152"
 		linkedin="www.linkedin.com/in/petri-luostarinen-819488bb"
@@ -43,20 +45,7 @@ import Header from '../components/Header.astro';
 		<h2>Tech stack</h2>
 		<i><p>List of some key tech solutions that I have hands on experience with.</p></i>
 		<div class="card-container tech-stack-styling">
-			<TechStackCard title="IAC tools" items={["AWS Cloud Formation", "Serverless Framework", "Terraform"]}/>
-			<TechStackCard title="Virtualization" items={["Docker", "Virtual Box (Basics)"]}/>
-			<TechStackCard title="Version control" items={["Bitbucket", "Git", "Github"]}/>
-			<TechStackCard title="CI/CD tools" items={["Bitbucket pipelines", "Github actions"]}/>
-			<TechStackCard title="Scripting languages" items={["Java (Basics)", "Javascript (node)", "Python 3", "Typescript"]}/>
-			<TechStackCard title="WEB Front-end" items={["Angular 4 (Basics)", "Astro", "CSS", "HTML", "Javascript", "Next JS", "React"]}/>
-			<TechStackCard title="WEB Back-end" items={["Django (Basics)", "Express", "Middy JS", "Fast API", "Flask (Basics)", "Spring boot (Basics)", "Openapi (Swagger)"]}/>
-			<TechStackCard title="SaaS Systems" items={["Azure AD (Basics)", "Confluence & Jira", "Contentfull", "Efecte", "Emarsys", "Giosg", "LS Retail (Basics)", "MS Dynamics ERP (Basics)", "Optimove", "And many other..."]}/>
-			<TechStackCard title="Data" items={["Snowflake (Basics)", "Postgre SQL (Basics)", "MySql (Basics)", "Elastic Search (Basics)"]}/>
-			<TechStackCard title="Opensource" items={["Open Maptiles", "Open Trip Planner", "Pelias"]}/>
-			<TechStackCard title="OS" items={["Linux", "macOS", "Windows"]}/>
-			<TechStackCard title="AWS Infra Services" items={["Api gateway", "Cloudfront", "Cognito", "Dynamo", "EC2", "ECS & ECR", "Lambda", "Open Search Service", "RDS", "Route 53", "S3", "SNS", "SQS", "VPC"]}/>
-
-
+			{tech_items.map(item => <TechStackCard title={item.title} items={item.items}/>)}
 		</div>
 
 		<h2>Projects</h2>
@@ -122,7 +111,7 @@ import Header from '../components/Header.astro';
 	main {
 		margin: auto;
 		padding: 1.5rem;
-		max-width: 90ch;
+		max-width: 110ch;
 		background-color: white;
 		box-shadow: 0rem 0rem 1rem 0rem gray;
 	}

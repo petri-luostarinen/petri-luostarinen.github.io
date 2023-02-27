@@ -1,0 +1,65 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+	start?: number;
+    end?: number;
+}
+
+const { start, end, title, body } = Astro.props;
+---
+
+<div class="layout-job typography-job">
+    <div class="left">
+        <header>
+            <h3>
+                {title}
+            </h3>
+        </header>
+        <p>
+            {body}
+        </p>
+    </div>
+    <hr>
+    <div class="right">
+        <h3>{end}</h3>
+        <h3>↑</h3>
+        <h3>{start}</h3>
+    </div>
+    
+</div>
+
+<style>
+    .layout-job{
+        display: flex;
+        justify-content: space-between;
+        /* background-color: white; */
+    }
+    .typography-job{
+        color: #444;
+        /* text-align:justify; */
+    }
+    .layout-job header{
+		/* background-color: red; */
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+    .layout-job .right{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        max-width: 20%;
+        
+	}
+    .layout-job .right h3{
+        margin: 0;
+        padding: 1rem 0rem 1rem 1rem;       
+	}
+    .layout-job .left{
+        margin-right: 1rem;
+        /* background-color: blue; */
+        /* max-width: 80%; */
+	}
+</style>

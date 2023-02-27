@@ -1,0 +1,54 @@
+---
+export interface Props {
+	title: string;
+	items: string[];
+}
+
+const { title, items} = Astro.props;
+---
+
+<div class="layout-card typography-card">
+	<header class="header-card">
+		<h3>
+			{title}
+		</h3>
+	</header>
+	<p>
+		{items.map(item => <li>{item}</li>)}
+	</p>
+	</div>
+
+<style>
+    .layout-card{
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		margin: 0.5rem 0.5rem;
+		max-width: 33%;
+		min-width: 12rem;
+	}
+	.typography-card{
+		color: #444;
+	}
+	.layout-card header{
+		/* background-color: red; */
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.typography-card h3 {
+		margin: 0;
+		font-size: 1.25rem;
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+	.typography-card p {
+		margin-top: 0.5rem;
+		margin-bottom: 0;
+		color: #444;
+	}
+	@media screen and (max-width: 740px) {
+	.layout-card {
+		max-width: 100%;
+	}
+	}
+</style>

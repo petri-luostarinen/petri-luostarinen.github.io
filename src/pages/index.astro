@@ -1,0 +1,150 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import JobDescription from '../components/JobDescription.astro';
+import TechStackCard from '../components/TechStackCard.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	
+	<main>
+		<Header
+		title="CV - Petri Luostarinen"
+		addressCountry="Finland"
+		addressCity="Sipoo"
+		email="petri0809@gmail.com"
+		phoneNum="+358407312152"
+		linkedin="www.linkedin.com/in/petri-luostarinen-819488bb"
+		/>
+		<h2>Work expereince</h2>
+		<JobDescription
+			start={2022}
+			end={2023}
+			title="Technical architect at VR"
+			body={`My tasks include working as a technical architect / advisor in new projects and procurements, developing proof of concept applications, developing application cloud infrastructure for existing full stack applications.
+				I also manage team of 4 internal front-end developers.`}
+		/>
+		<JobDescription
+		start={2020}
+		end={}
+		title="Solution manager at Musti Group"
+		body={`My responsibilities included designing, developing and implementing IT architecture for new cross function business capabilities. Such as Personal offers, Customer Api, Bonus system, Mobile app framework (for internal use.) I was also responsible of developing Musti Group pet and pet breed data model and multiple other data related projects. At Musti Group I have also been responsible of support, development and maintenance of multiple SaaS services + internally developed production applications.
+			My daily work included: Agile Project management, following up and updating business stakeholders on development progress + translating business requirements in to development tasks. I all so took an active part on Rest api development, maintaining and monitoring integrations and python back-end development.
+			I also managed small team of 2 external senior developers and one internal developer + external support person.`}
+		/>
+		<JobDescription
+		start={2018}
+		end={}
+		title="IT and technical specialist for Customer solutions at Musti Group"
+		body={`As IT specialist for Customer solutions my tasks included:
+			Project management, Customer support key software adminstrator, group CRM adminstrator, integrations, rest api development, mobile app development, process automation and much more.`}
+		/>
+		<h2>Tech stack</h2>
+		<i><p>List of some key tech solutions that I have hands on experience with.</p></i>
+		<div class="card-container tech-stack-styling">
+			<TechStackCard title="IAC tools" items={["AWS Cloud Formation", "Serverless Framework", "Terraform"]}/>
+			<TechStackCard title="Virtualization" items={["Docker", "Virtual Box (Basics)"]}/>
+			<TechStackCard title="Version control" items={["Bitbucket", "Git", "Github"]}/>
+			<TechStackCard title="CI/CD tools" items={["Bitbucket pipelines", "Github actions"]}/>
+			<TechStackCard title="Scripting languages" items={["Java (Basics)", "Javascript (node)", "Python 3", "Typescript"]}/>
+			<TechStackCard title="WEB Front-end" items={["Angular 4 (Basics)", "Astro", "CSS", "HTML", "Javascript", "Next JS", "React"]}/>
+			<TechStackCard title="WEB Back-end" items={["Django (Basics)", "Express", "Middy JS", "Fast API", "Flask (Basics)", "Spring boot (Basics)", "Openapi (Swagger)"]}/>
+			<TechStackCard title="SaaS Systems" items={["Azure AD (Basics)", "Confluence & Jira", "Contentfull", "Efecte", "Emarsys", "Giosg", "LS Retail (Basics)", "MS Dynamics ERP (Basics)", "Optimove", "And many other..."]}/>
+			<TechStackCard title="Data" items={["Snowflake (Basics)", "Postgre SQL (Basics)", "MySql (Basics)", "Elastic Search (Basics)"]}/>
+			<TechStackCard title="Opensource" items={["Open Maptiles", "Open Trip Planner", "Pelias"]}/>
+			<TechStackCard title="OS" items={["Linux", "macOS", "Windows"]}/>
+			<TechStackCard title="AWS Infra Services" items={["Api gateway", "Cloudfront", "Cognito", "Dynamo", "EC2", "ECS & ECR", "Lambda", "Open Search Service", "RDS", "Route 53", "S3", "SNS", "SQS", "VPC"]}/>
+
+
+		</div>
+
+		<h2>Projects</h2>
+		<i><p>List of some key projects I have been involved with and can be publicly announced.</p></i>
+		
+		<div role="list" class="card-container">
+			<Card
+				year={2022}
+				title="POC - Multimodal route planner"
+				body="I developed a POC project for multimodal route planner by combining multiple open source technologies and custom services. The service infrastructure was quite complex including services like: AWS Open search, ECS Fargate, Lambda, DynamoDB, Api Gateway. Front end for the application was developed with React using React Bootstrap component library and React Leaflet slippy map library."
+			/>
+			<Card
+			year={2021}
+			title="Identity platform"
+			body={`I lead the development of an Identity platform for companys end customers. The platform was built around AWS Cognito and designed to support Oauth2 and OIDC.`}
+		/>
+			<Card
+			year={2021}
+			title="Bonus system renewal"
+			body={`I designed and lead the development working heavily with the Data engineers managing the data platform to deliver safer, more accurate and high performing bonus system end to end. The actual bonus calculation was performed in Snow Flake and the result was uploaded to the operational system via custom integration running in AWS.`}
+		/>
+			<Card
+			year={2021}
+			title="Personal offers"
+			body={`I headed the design and development of Personal offers business cabability. The project started by mapping out current system cababilities and defects, designing the integration architecture, designing the business and support processes and eventually developing the capabilities. I had an active role developing the integrations and the API's serving Ecommerce site and other internal applications.`}
+		/>
+			<Card
+			year={2020}
+			title="Customer interface on POS"
+			body={`I headed the design and development of a custom Customer interface integrated directly in to the point of sales system. The use case for the service was to be the central hub for sales persons to identify customers and to provide the required customer infromation in the stores. The application frontend was developed with React (Java Script) and the backend was a serverless rest API written in Python.`}
+		/>
+			<Card
+			year={2020}
+			title="Serverless Rest api development"
+			body={`As a part of a major customer architecture renewal (driven by new business requirements) in which I took an active part in designing I headed the development of new "Micro service" -based back end application that acted as a back-end for customer related business processes. The back-end served the needs of inhouse Ecommerse platform, 2 distinct front-ends used by internal users (Stores & Customer support) in all customer related tasks. Later we would expand this back end system to cover the internal mobile applications and multiple other integrations varying in complexity. The application infra was developed with Serverless Framework and Cloudformation. Back end code was written in Python (initially with no additional frameworks, later with Fast API) and logic ran exclusively on AWS Lambda functions. User access management for the API relied heavily on company Azure AD and the access was granted via AD security groups.`}
+			/>
+			<Card
+			year={2019}
+			title="Mobile app development"
+			body={`I was part of team of consultants developing an Android application for company internal use. Main usecase for the application was for store employees to collect and handle e-commerce orders in store. The app it self was a native Android app (Kotlin) with Back end written in Java using Spring Boot framework. Application back-end was published on AWS EC2, services running in docker containers. Back end services included Elastic Search (Running in EC2 instance) and MySql DB (Allso running in EC2 instance) The initial development project was outsourced in to India. Initially I arranged beta testing, user trainings and organized the user support processes and acted as the main support person for the end users. After the launch I was tasked to maintain the application. At the end of product life sycle I headed the development for replacing the application and migrating the services to a new infrastrucutre.				`}
+			/>
+			<Card
+			year={2019}
+			title="Customer REST Api development"
+			body={`I headed the development of custom Customer API (Developed by the SaaS Provider). I designed the REST api endpoints and acted as a project manager for multiple integration projects. Projects included new integrations, replacing legacy integrations and developing the customer data model.`}
+			/>
+			<Card
+			year={2018}
+			title="Renewing IT Support for customer solutions"
+			body={`I was tasked to take over the end user support for company Customer solutions (CRM, Marketing automation, Customer support services). We insourced the support from an external company and created multiple processes where there were none and started documentation practices. Gradually over the years lowering the need of support from 2 external consultants to 1 part time employee. I automated a lot of the tidious tasks using Python, Django, Robot Framework and Selenium and headless Chrome.`}
+			/>
+			<Card
+			year={2018}
+			title="Customer service system renewal & CRM integration"
+			body={`As my frist project at the company I organized the migration of Customer service systems to a new major version. The version pump included setting up new processes, migrating to a new data model, migrating from desktop phones to VOIP, and migrating email customer support to a new ticketing system. I worked with the SaaS provider designing the Customer Service System architecture and training the staff.`}
+			/>
+		</div>
+	</main>
+
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 90ch;
+		background-color: white;
+		box-shadow: 0rem 0rem 1rem 0rem gray;
+	}
+	.card-container{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		min-width: 22rem;
+		margin-top: 1rem;
+	}
+	.grid-container{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;	
+	}
+	.tech-stack-styling{
+		/* background-color: white; */
+	}
+
+	@media screen and (max-width: 740px) {
+	.grid-container {
+		grid-template-columns: 1fr 1fr;
+	}
+	}
+</style>

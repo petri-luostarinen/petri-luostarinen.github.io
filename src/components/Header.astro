@@ -1,0 +1,92 @@
+---
+import profilePic from '../../images/linkedin-profile.jpeg'
+export interface Props {
+	title: string;
+    phoneNum: string;
+    email: string;
+    addressCountry?: string;
+    addressStreet?: string;
+    addressCity?: string;
+    linkedin: string;
+}
+
+const { title, phoneNum, email, addressStreet, addressCity, addressCountry, linkedin } = Astro.props;
+---
+
+<div class="layout-header typography-header">
+    <div class="left">
+        <img src={profilePic}>
+        <h1>{title}</h1>
+    </div>
+    <div class="right">
+        <ul class="contact-info-layout contact-info-typography">
+            <li><a href={`mailto: ${email}`}>{email}</a><span>✉️</span> </li>
+            <li><p>{phoneNum}</p><span>📱</span> </li>
+            <li> <p>{addressCountry}, {addressCity}</p> <span>📍</span></li>
+            <li><a href={linkedin}>Linkedin</a><span>🌐</span></li>
+        </ul>
+    </div>
+    
+</div>
+
+<style>
+    .layout-header{
+        display: flex;
+        justify-content: space-between;
+        line-height: 1rem;
+        align-content: center;
+    }
+    .contact-info-layout{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .contact-info-layout li{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .contact-info-layout li p{
+        margin: 0.3rem 0.1rem;
+        padding: 0;
+    }
+    .contact-info-layout li a{
+        margin: 0;
+        padding: 0;
+    }
+    .contact-info-layout li span{
+        margin-left: 0.5rem;
+    }
+    .contact-info-typography{
+        color: #444;
+        font-size: 0.75rem;
+    }
+    .contact-info-typography a{
+        color: #444;
+        text-decoration: none;
+        font-weight: bold;
+        
+    }
+    .typography-header h1{
+        line-height: 2rem;
+    }
+    .layout-header .right{
+        height: 8rem;
+        margin-top: 1rem;
+    }
+    .layout-header .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .layout-header .left img{
+        border-radius: 8rem;
+        border: 0.5rem solid rgb(216, 216, 216);
+        height: 8rem;
+        margin-right: 1rem;
+    }
+
+
+</style>

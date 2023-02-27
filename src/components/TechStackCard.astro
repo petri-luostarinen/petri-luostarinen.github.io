@@ -21,7 +21,7 @@ const { title, items} = Astro.props;
 		</h3>
 	</header>
 	<p>
-		{items.map(item => <li><a href={item.url}>{item.name}</a> {item.basics ? <Tag text="Basics"/>:null} </li>)}
+		{items.map(item => <li><a target="_blank" href={item.url}>{item.name}</a> {item.basics ? <Tag text="Basics"/>:null} </li>)}
 	</p>
 	</div>
 

@@ -21,10 +21,10 @@ const { title, phoneNum, email, googleMapsLink, addressCity, addressCountry, lin
     </div>
     <div class="right">
         <ul class="contact-info-layout contact-info-typography">
-            <li><a aria-label="email address" href={`mailto: ${email}`}>{email}</a><span>✉️</span> </li>
-            <li><a href={`tel:${phoneNum}`}aria-label="phone number" >{phoneNum}</a><span>📱</span> </li>
-            <li> <a aria-label="location" href={googleMapsLink} target="_blank">{addressCountry}, {addressCity}</a> <span>📍</span></li>
-            <li><a aria-label="social media" href={linkedin} target="_blank">Linkedin</a><span>🌐</span></li>
+            <li><a aria-label="email address" href={`mailto: ${email}`}>{email}</a></li>
+            <li><a href={`tel:${phoneNum}`}aria-label="phone number" >{phoneNum}</a></li>
+            <li> <a aria-label="location" href={googleMapsLink} target="_blank">{addressCountry}, {addressCity}</a></li>
+            <li><a aria-label="social media" href={linkedin} target="_blank">Linkedin</a></li>
         </ul>
     </div>
     
@@ -62,12 +62,16 @@ const { title, phoneNum, email, googleMapsLink, addressCity, addressCountry, lin
     }
     .contact-info-typography{
         color: #444;
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
     .contact-info-typography a{
         color: #444;
         text-decoration: none;
-        font-weight: bold;
+        font-weight: lighter;
+        
+    }
+    .contact-info-typography a:hover{
+        font-weight: normal;
         
     }
     .typography-header h1{

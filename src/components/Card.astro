@@ -1,0 +1,66 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+	year: number;
+}
+
+const { year, title, body } = Astro.props;
+---
+
+<div class="layout-card typography-card">
+	<header class="header-card">
+		<h3>
+			{title}
+		</h3>
+		
+		<h3 id="project-year">
+			{year}
+		</h3>
+	</header>
+	<p>
+		{body}
+	</p>
+	</div>
+
+<style>
+	#project-year{
+		margin-left: 0.5rem;
+	}
+	.layout-card{
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		padding: 0.5rem;
+		background-color: white;
+		border-radius: 0.75rem;
+		border: #a1a1a1 solid 1px;
+		margin: 0.5rem 0rem;
+		max-width: 45%;
+		min-width: 20rem;
+	}
+	.typography-card{
+		color: #444;
+	}
+	.layout-card header{
+		/* background-color: red; */
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.typography-card h3 {
+		margin: 0;
+		font-size: 1rem;
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+	.typography-card p {
+		margin-top: 0.5rem;
+		margin-bottom: 0;
+		color: #444;
+	}
+	@media screen and (max-width: 740px) {
+	.layout-card {
+		max-width: 100%;
+	}
+	}
+</style>

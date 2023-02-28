@@ -16,8 +16,8 @@ const { title, phoneNum, email, googleMapsLink, addressCity, addressCountry, lin
 
 <div class="layout-header typography-header">
     <div class="left">
-        <img src={profilePic}>
-        <h1>{title}</h1>
+    <img id="profilePic"src={profilePic}>
+    <h1>{title}</h1>
     </div>
     <div class="right">
         <ul class="contact-info-layout contact-info-typography">
@@ -31,11 +31,18 @@ const { title, phoneNum, email, googleMapsLink, addressCity, addressCountry, lin
 </div>
 
 <style>
+    #profilePic{
+        border-radius: 8rem;
+        border: 0.5rem solid rgb(216, 216, 216);
+        height: 8rem;
+        margin-right: 1rem;
+    }
     .layout-header{
         display: flex;
         justify-content: space-between;
         line-height: 1rem;
         align-content: center;
+        flex-wrap: wrap;
     }
     .contact-info-layout{
         list-style: none;
@@ -78,19 +85,35 @@ const { title, phoneNum, email, googleMapsLink, addressCity, addressCountry, lin
         line-height: 2rem;
     }
     .layout-header .right{
-        height: 8rem;
         margin-top: 1rem;
+
     }
     .layout-header .left{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .layout-header .left img{
-        border-radius: 8rem;
-        border: 0.5rem solid rgb(216, 216, 216);
-        height: 8rem;
-        margin-right: 1rem;
+
+    @media screen and (max-width: 740px){
+        .layout-header .right{
+        /* background: red; */
+        width: 100%;
+        }
+    .contact-info-layout{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-basis: 1;
+    }
+    .contact-info-typography{
+        color: #444;
+        font-size: 0.7rem;
+    }
+    /* #profilePic{
+        width: 5rem;
+        height: auto;
+        border-width: 0.5rem;
+    } */
     }
 
 

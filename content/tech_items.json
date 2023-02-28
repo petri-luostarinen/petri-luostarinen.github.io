@@ -1,0 +1,125 @@
+[
+    {
+        "title": "IAC tools",
+        "items": [
+            {"name": "AWS Cloud Formation", "url": "https://aws.amazon.com/cloudformation/"},
+            {"name": "Serverless Framework", "url": "https://www.serverless.com/"},
+            {"name": "Terraform", "url": "https://www.terraform.io/"}
+        ]
+    },
+    {
+        "title": "Virtualization",
+        "items": [
+            {"name": "Docker", "url": ""},
+            {"name": "Virtual Box", "url": "", "basics": true}
+        ]
+    },
+    {
+        "title": "Version control",
+        "items": [
+            {"name": "Bitbucket", "url": ""},
+            {"name": "Github", "url": ""},
+            {"name": "Git", "url": ""}
+        ]
+    },
+    {
+        "title": "CI/CD tools",
+        "items": [
+            {"name": "Bitbucket pipelines", "url": ""},
+            {"name": "Github actions", "url": ""}
+        ]
+    },
+    {
+        "title": "Scripting languages",
+        "items": [
+            {"name": "Java", "url": "", "basics": true},
+            {"name": "Javascript (Node)", "url": ""},
+            {"name": "Python 3", "url": ""},
+            {"name": "Typescript", "url": ""}
+        ]
+    },
+    {
+        "title": "WEB Front-end",
+        "items": [
+            {"name": "Angular 4", "url": "", "basics": true},
+            {"name": "Astro", "url": ""},
+            {"name": "CSS", "url": ""},
+            {"name": "HTML", "url": ""},
+            {"name": "Javascript", "url": ""},
+            {"name": "Next JS", "url": ""},
+            {"name": "React", "url": ""}
+            
+        ]
+    },
+    {
+        "title": "WEB Back-end",
+        "items": [
+            {"name": "Django", "url": "", "basics": true},
+            {"name": "Express", "url": ""},
+            {"name": "Middy JS", "url": ""},
+            {"name": "Flask", "url": "", "basics": true},
+            {"name": "Spring boot", "url": "", "basics": true},
+            {"name": "Openapi (Swagger)", "url": ""}
+        ]
+    },
+    {
+        "title": "SaaS Systems",
+        "items": [
+            {"name": "Azure AD", "url": "", "basics": true},
+            {"name": "Confluence & Jira", "url": ""},
+            {"name": "Contentfull", "url": "", "basics": true},
+            {"name": "Efecte", "url": ""},
+            {"name": "Emarsys", "url": ""},
+            {"name": "Giosg", "url": ""},
+            {"name": "LS Retail", "url": "", "basics": true},
+            {"name": "MS Dynamics ERP", "url": "", "basics": true},
+            {"name": "Optimove", "url": ""},
+            {"name": "And many other...", "url": ""}
+        ]
+    },
+    {
+        "title": "Data",
+        "items": [
+            {"name": "Dynamo DB", "url": ""},
+            {"name": "Snowflake", "url": "", "basics": true},
+            {"name": "Postgre SQL", "url": "", "basics": true},
+            {"name": "MySql", "url": "", "basics": true},
+            {"name": "Elastic Search", "url": "", "basics": true}
+        ]
+    },
+    {
+        "title": "Opensource",
+        "items": [
+            {"name": "Open Maptiles", "url": "", "basics": true},
+            {"name": "Open Trip Planner", "url": ""},
+            {"name": "Pelias", "url": ""}
+        ]
+    },
+    {
+        "title": "OS",
+        "items": [
+            {"name": "Linux", "url": ""},
+            {"name": "macOS", "url": ""},
+            {"name": "Windows", "url": ""}
+        ]
+    },
+    {
+        "title": "AWS Infra Services",
+        "items": [
+            {"name": "Api gateway", "url": ""},
+            {"name": "Cloudfront", "url": ""},
+            {"name": "Cognito", "url": ""},
+            {"name": "Dynamo", "url": ""},
+            {"name": "EC2", "url": ""},
+            {"name": "ECS & ECR", "url": ""},
+            {"name": "Lambda", "url": ""},
+            {"name": "Open Search Service", "url": ""},
+            {"name": "RDS", "url": ""},
+            {"name": "Route 53", "url": ""},
+            {"name": "S3", "url": ""},
+            {"name": "SNS", "url": ""},
+            {"name": "SQS", "url": ""},
+            {"name": "VPC", "url": ""}
+        ]
+    }
+]

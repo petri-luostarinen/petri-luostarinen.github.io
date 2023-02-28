@@ -7,34 +7,42 @@ export interface Props {
     addressCountry?: string;
     addressStreet?: string;
     addressCity?: string;
+    googleMapsLink?: string;
     linkedin: string;
 }
 
-const { title, phoneNum, email, addressStreet, addressCity, addressCountry, linkedin } = Astro.props;
+const { title, phoneNum, email, googleMapsLink, addressCity, addressCountry, linkedin } = Astro.props;
 ---
 
 <div class="layout-header typography-header">
     <div class="left">
-        <img src={profilePic}>
-        <h1>{title}</h1>
+    <img id="profilePic"src={profilePic}>
+    <h1>{title}</h1>
     </div>
     <div class="right">
         <ul class="contact-info-layout contact-info-typography">
-            <li><a href={`mailto: ${email}`}>{email}</a><span>✉️</span> </li>
-            <li><p>{phoneNum}</p><span>📱</span> </li>
-            <li> <p>{addressCountry}, {addressCity}</p> <span>📍</span></li>
-            <li><a href={linkedin}>Linkedin</a><span>🌐</span></li>
+            <li><a aria-label="email address" href={`mailto: ${email}`}>{email}</a></li>
+            <li><a href={`tel:${phoneNum}`}aria-label="phone number" >{phoneNum}</a></li>
+            <li> <a aria-label="location" href={googleMapsLink} target="_blank">{addressCountry}, {addressCity}</a></li>
+            <li><a aria-label="social media" href={linkedin} target="_blank">Linkedin</a></li>
         </ul>
     </div>
     
 </div>
 
 <style>
+    #profilePic{
+        border-radius: 8rem;
+        border: 0.5rem solid rgb(216, 216, 216);
+        height: 8rem;
+        margin-right: 1rem;
+    }
     .layout-header{
         display: flex;
         justify-content: space-between;
         line-height: 1rem;
         align-content: center;
+        flex-wrap: wrap;
     }
     .contact-info-layout{
         list-style: none;
@@ -61,31 +69,51 @@ const { title, phoneNum, email, addressStreet, addressCity, addressCountry, link
     }
     .contact-info-typography{
         color: #444;
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
     .contact-info-typography a{
         color: #444;
         text-decoration: none;
-        font-weight: bold;
+        font-weight: lighter;
+        
+    }
+    .contact-info-typography a:hover{
+        font-weight: normal;
         
     }
     .typography-header h1{
         line-height: 2rem;
     }
     .layout-header .right{
-        height: 8rem;
         margin-top: 1rem;
+
     }
     .layout-header .left{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .layout-header .left img{
-        border-radius: 8rem;
-        border: 0.5rem solid rgb(216, 216, 216);
-        height: 8rem;
-        margin-right: 1rem;
+
+    @media screen and (max-width: 740px){
+        .layout-header .right{
+        /* background: red; */
+        width: 100%;
+        }
+    .contact-info-layout{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-basis: 1;
+    }
+    .contact-info-typography{
+        color: #444;
+        font-size: 0.7rem;
+    }
+    /* #profilePic{
+        width: 5rem;
+        height: auto;
+        border-width: 0.5rem;
+    } */
     }
 
 

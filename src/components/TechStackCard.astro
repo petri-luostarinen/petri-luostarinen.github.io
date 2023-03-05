@@ -7,7 +7,7 @@ export interface Props {
 
 export interface TechItem{
 	name: string;
-	url: string
+	url?: string
 	basics?: boolean
 }
 
@@ -21,11 +21,22 @@ const { title, items} = Astro.props;
 		</h3>
 	</header>
 	<p>
-		{items.map(item => <li><a target="_blank" href={item.url}>{item.name}</a> {item.basics ? <Tag text="Basics"/>:null} </li>)}
+		{items.map(item => {
+			if(item.url){
+				return <li><a target="_blank" href={item.url}>{item.name}</a> {item.basics ? <Tag text="Basics"/>:null} </li>
+			}else{
+				return <li> <span class="no-link">{item.name}</span> {item.basics ? <Tag text="Basics"/>:null} </li>
+			}
+			})}
 	</p>
 	</div>
 
 <style>
+	.no-link{
+		text-decoration: none;
+		color: #444;
+		font-weight: lighter;
+	}
 	a{
 		text-decoration: none;
 		color: #444;

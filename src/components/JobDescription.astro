@@ -2,8 +2,8 @@
 export interface Props {
 	title: string;
 	body: string;
-	start?: number;
-    end?: number;
+	start?: number | string;
+    end?: string | number | null;
 }
 
 const { start, end, title, body } = Astro.props;

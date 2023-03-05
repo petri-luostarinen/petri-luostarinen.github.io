@@ -1,0 +1,74 @@
+[
+    {
+        "year": 2022,
+        "title": "POC - Multimodal route planner",
+        "body": {
+            "fi_FI": "",
+            "en_US": "I developed a POC project for multimodal route planner by combining multiple open source technologies and custom services. The service infrastructure was quite complex including services like: AWS Open search, ECS Fargate, Lambda, DynamoDB, Api Gateway. Front end for the application was developed with React using React Bootstrap component library and React Leaflet slippy map library."
+        }
+    },
+    {
+        "year": 2021,
+        "title": "Identity platform",
+        "body": {
+            "fi_FI": "",
+            "en_US": "I lead the development of an Identity platform for companys end customers. The platform was built around AWS Cognito and designed to support Oauth2 and OIDC."
+        }
+    },
+    {
+        "year": 2021,
+        "title": "Bonus system renewa",
+        "body": {
+            "fi_FI": "",
+            "en_US": "I designed and lead the development working heavily with the Data engineers managing the data platform to deliver safer, more accurate and high performing bonus system end to end. The actual bonus calculation was performed in Snow Flake and the result was uploaded to the operational system via custom integration running in AWS."
+        }
+    },
+    {
+        "year": 2021,
+        "title": "Personal offers",
+        "body": {
+            "fi_FI": "",
+            "en_US": "I headed the design and development of Personal offers business cabability. The project started by mapping out current system cababilities and defects, designing the integration architecture, designing the business and support processes and eventually developing the capabilities. I had an active role developing the integrations and the API's serving Ecommerce site and other internal applications."
+        }
+    },
+    {
+        "year": 2020,
+        "title": "Customer interface on POS",
+        "body": {
+            "fi_FI": "",
+            "en_US": "I headed the design and development of a custom Customer interface integrated directly in to the point of sales system. The use case for the service was to be the central hub for sales persons to identify customers and to provide the required customer infromation in the stores. The application frontend was developed with React (Java Script) and the backend was a serverless rest API written in Python."
+        }
+    },
+    {
+        "year": 2020,
+        "title": "Serverless Rest api development",
+        "body": {
+            "fi_FI": "",
+            "en_US": "As a part of a major customer architecture renewal (driven by new business requirements) in which I took an active part in designing I headed the development of new \"Micro service\" -based back end application that acted as a back-end for customer related business processes. The back-end served the needs of inhouse Ecommerse platform, 2 distinct front-ends used by internal users (Stores & Customer support) in all customer related tasks. Later we would expand this back end system to cover the internal mobile applications and multiple other integrations varying in complexity. The application infra was developed with Serverless Framework and Cloudformation. Back end code was written in Python (initially with no additional frameworks, later with Fast API) and logic ran exclusively on AWS Lambda functions. User access management for the API relied heavily on company Azure AD and the access was granted via AD security groups."
+        }
+    },
+    {
+        "year": 2019,
+        "title": "Mobile app development",
+        "body": {
+            "fi_FI": "",
+            "en_US": "I was part of team of consultants developing an Android application for company internal use. Main usecase for the application was for store employees to collect and handle e-commerce orders in store. The app it self was a native Android app (Kotlin) with Back end written in Java using Spring Boot framework. Application back-end was published on AWS EC2, services running in docker containers. Back end services included Elastic Search (Running in EC2 instance) and MySql DB (Allso running in EC2 instance) The initial development project was outsourced in to India. Initially I arranged beta testing, user trainings and organized the user support processes and acted as the main support person for the end users. After the launch I was tasked to maintain the application. At the end of product life sycle I headed the development for replacing the application and migrating the services to a new infrastrucutre."
+        }
+    },
+    {
+        "year": 2018,
+        "title": "Renewing IT Support for customer solutions",
+        "body": {
+            "fi_FI": "",
+            "en_US": "I was tasked to take over the end user support for company Customer solutions (CRM, Marketing automation, Customer support services). We insourced the support from an external company and created multiple processes where there were none and started documentation practices. Gradually over the years lowering the need of support from 2 external consultants to 1 part time employee. I automated a lot of the tidious tasks using Python, Django, Robot Framework and Selenium and headless Chrome."
+        }
+    },
+    {
+        "year": 2018,
+        "title": "Customer service system renewal & CRM integration",
+        "body": {
+            "fi_FI": "",
+            "en_US": "As my frist project at the company I organized the migration of Customer service systems to a new major version. The version pump included setting up new processes, migrating to a new data model, migrating from desktop phones to VOIP, and migrating email customer support to a new ticketing system. I worked with the SaaS provider designing the Customer Service System architecture and training the staff."
+        }
+    }
+]

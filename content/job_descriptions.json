@@ -1,29 +1,38 @@
 [
-    {
-        "start": 2022,
-        "end": "2023",
-        "title": "Technical architect at VR",
-        "body": {
-            "fi_FI": "",
-            "en_US": "As a Technical Architect at VR, I am responsible for providing technical leadership and expertise in the design and development of new projects and procurements. I work closely with project managers and stakeholders to understand their requirements and ensure that the technical architecture of new projects is aligned with business objectives. My primary duties include developing proof of concept applications to demonstrate the feasibility of new ideas and technologies, as well as developing application cloud infrastructure for existing full stack applications. I am responsible for selecting the appropriate technologies and platforms to meet project requirements, and for ensuring that all technical solutions are scalable, reliable, and secure. In addition to my technical responsibilities, I am also responsible for managing a team of four internal front-end developers. You will provide guidance and mentoring to your team members, and ensure that they have the resources and support they need."
-        }
-    },
-    {
-        "start": 2020,
-        "end": null,
-        "title": "Solution manager at Musti Group",
-        "body": {
-            "fi_FI": "",
-            "en_US": "My responsibilities included designing, developing and implementing IT architecture for new cross function business capabilities. Such as Personal offers, Customer Api, Bonus system, Mobile app framework (for internal use.) I was also responsible of developing Musti Group pet and pet breed data model and multiple other data related projects. At Musti Group I have also been responsible of support, development and maintenance of multiple SaaS services + internally developed production applications. My daily work included: Agile Project management, following up and updating business stakeholders on development progress + translating business requirements in to development tasks. I all so took an active part on Rest api development, maintaining and monitoring integrations and python back-end development. I also managed small team of 2 external senior developers and one internal developer + external support person."
-        }   
-    },
-    {
-        "start": 2018,
-        "end": null,
-        "title": "IT and technical specialist for Customer solutions at Musti Group",
-        "body": {
-            "fi_FI": "",
-            "en_US": "As IT specialist for Customer solutions my tasks included: Project management, Customer support key software adminstrator, group CRM adminstrator, integrations, rest api development, mobile app development, process automation and much more."
-        }   
+  {
+    "start": 2023,
+    "end": "2024",
+    "title": "Head of Digital Capabilities at VR",
+    "body": {
+      "fi_FI": "",
+      "en_US": "As Head of Digital Capabilities, I retained many of my responsibilities from my previous role as a Technical Architect. However, my role has expanded to include overseeing the technical aspects of all VR Sales channel front-ends, representing the VR Long Distance Traffic Business IT on the IT Management Board, and managing the budgeting and progress of digital development resources. Additionally, I am now responsible for improving digital development practices to make them more effective and scalable. My team has grown to include a QA team of three and a project manager."
     }
+  },
+  {
+    "start": 2022,
+    "end": null,
+    "title": "Technical architect at VR",
+    "body": {
+      "fi_FI": "",
+      "en_US": "As a Technical Architect at VR, I am responsible for providing technical leadership and expertise in the design and development of new projects and procurements. I work closely with project managers and stakeholders to understand their requirements and ensure that the technical architecture of new projects is aligned with business objectives. My primary duties include developing proof of concept applications to demonstrate the feasibility of new ideas and technologies, as well as developing application cloud infrastructure for existing full stack applications. I am responsible for selecting the appropriate technologies and platforms to meet project requirements, and for ensuring that all technical solutions are scalable, reliable, and secure. In addition to my technical responsibilities, I am also responsible for managing a team of four internal front-end developers. You will provide guidance and mentoring to your team members, and ensure that they have the resources and support they need."
+    }
+  },
+  {
+    "start": 2020,
+    "end": null,
+    "title": "Solution manager at Musti Group",
+    "body": {
+      "fi_FI": "",
+      "en_US": "My responsibilities included designing, developing and implementing IT architecture for new cross function business capabilities. Such as Personal offers, Customer Api, Bonus system, Mobile app framework (for internal use.) I was also responsible of developing Musti Group pet and pet breed data model and multiple other data related projects. At Musti Group I have also been responsible of support, development and maintenance of multiple SaaS services + internally developed production applications. My daily work included: Agile Project management, following up and updating business stakeholders on development progress + translating business requirements in to development tasks. I all so took an active part on Rest api development, maintaining and monitoring integrations and python back-end development. I also managed small team of 2 external senior developers and one internal developer + external support person."
+    }
+  },
+  {
+    "start": 2018,
+    "end": null,
+    "title": "IT and technical specialist for Customer solutions at Musti Group",
+    "body": {
+      "fi_FI": "",
+      "en_US": "As IT specialist for Customer solutions my tasks included: Project management, Customer support key software adminstrator, group CRM adminstrator, integrations, rest api development, mobile app development, process automation and much more."
+    }
+  }
 ]

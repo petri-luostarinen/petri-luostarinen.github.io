@@ -20,7 +20,7 @@ const { title, items} = Astro.props;
 			{title}
 		</h3>
 	</header>
-	<p>
+	<ul>
 		{items.map(item => {
 			if(item.url){
 				return <li><a target="_blank" href={item.url}>{item.name}</a> {item.basics ? <Tag text="Basics"/>:null} </li>
@@ -28,10 +28,20 @@ const { title, items} = Astro.props;
 				return <li> <span class="no-link">{item.name}</span> {item.basics ? <Tag text="Basics"/>:null} </li>
 			}
 			})}
-	</p>
+	</ul>
 	</div>
 
 <style>
+	ul{
+		list-style: none;
+		padding: 0;
+	}
+
+	ul li {
+		display: flex;
+		justify-content: space-between;
+		padding: 0.1rem 0rem;
+	}
 	.no-link{
 		text-decoration: none;
 		color: #444;

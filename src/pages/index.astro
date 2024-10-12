@@ -7,35 +7,42 @@ import Header from '../components/Header.astro';
 import tech_items from '../../content/tech_items.json';
 import job_descriptions from '../../content/job_descriptions.json';
 import projects from '../../content/projects.json'
+import Page from '../components/Page.astro';
 ---
 
 <Layout title="CV - Petri Luostarinen">
 	
 	<main>
-		<Header
-		title="CV - Petri Luostarinen"
-		addressCountry="Finland"
-		addressCity="Västerskog"
-		googleMapsLink = "https://goo.gl/maps/zSq2wm17pPAfXJH6A"
-		email="petri0809@gmail.com"
-		phoneNum="+358407312152"
-		linkedin="https://www.linkedin.com/in/petri-luostarinen-819488bb"
-		/>
-		<h2>Work expereince</h2>
-		{job_descriptions.map(desc => <JobDescription start={desc.start} end={desc.end} title={desc.title} body={desc.body.en_US}/>)}
-		<h2>Tech stack</h2>
+		<Page>
+			<Header
+			title="CV - Petri Luostarinen"
+			addressCountry="Finland"
+			addressCity="Västerskog"
+			googleMapsLink = "https://goo.gl/maps/zSq2wm17pPAfXJH6A"
+			email="petri0809@gmail.com"
+			phoneNum="+358407312152"
+			linkedin="https://www.linkedin.com/in/petri-luostarinen-819488bb"
+			/>
 		
-		<i><p>List of some key tech solutions that I have hands on experience with.</p></i>
-		
-		<div class="card-container tech-stack-styling">
-			{tech_items.map(item => <TechStackCard title={item.title} items={item.items}/>)}
-		</div>
+			<h2>Work expereince</h2>
+			{job_descriptions.map(desc => <JobDescription start={desc.start} end={desc.end} title={desc.title} body={desc.body.en_US}/>)}
+		</Page>
 
-		<h2>Projects</h2>
+		<Page>
+			<h2>Tech stack</h2>
+			
+			<i><p>List of some key tech solutions that I have hands on experience with.</p></i>
+			
+			<div class="tech-item-container tech-stack-styling" style="page-break-after: always;">
+				{tech_items.map(item => <TechStackCard title={item.title} items={item.items}/>)}
+			</div>
+		</Page>
+
+		<h2 style="page-break-before: auto">Projects</h2>
 		<i><p>List of some key projects I have been involved with and that can be publicly announced.</p></i>
 		
 		<div role="list" class="card-container">
-			{projects.map(project => <Card year={project.year} title={project.title} body={project.body.en_US}/>)}
+			{projects.map((project) => <Card year={project.year} title={project.title} body={project.body.en_US}/>)}
 		</div>
 	</main>
 
@@ -50,13 +57,21 @@ import projects from '../../content/projects.json'
 		background-color: white;
 		box-shadow: 0rem 0rem 1rem 0rem gray;
 	}
+
+	.tech-item-container{
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		justify-items: center;
+		gap: 0rem 1rem;
+	}
+
 	.card-container{
 		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		min-width: 22rem;
-		margin-top: 1rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+		justify-items: center;
+		gap: 0rem 2rem;
 	}
 
 	.grid-container{
@@ -72,4 +87,10 @@ import projects from '../../content/projects.json'
 		grid-template-columns: 1fr 1fr;
 	}
 	}
+
+	@media print {
+	main {
+		box-shadow: none !important;
+	}
+}
 </style>

@@ -4,16 +4,28 @@ export interface Props {
 }
 const { text } = Astro.props;
 ---
+<div><span>{text}</span></div>
 
-<span>{text}</span>
 
 <style>
- span{
+ div{
     color: white;
     background-color: #444;
     font-size: 0.7rem;
     padding: 0.2rem 0.4rem;
-    margin: 0rem 0.3rem;
+    /* margin: 0rem 0.3rem; */
     border-radius: 1rem;
+    max-height: 1rem;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
+
+ @media print {
+	div {
+      border: 1px solid #444;
+      color: #444;
+	}
+}
 </style>

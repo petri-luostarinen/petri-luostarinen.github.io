@@ -1,125 +1,186 @@
 [
-    {
-        "title": "IAC tools",
-        "items": [
-            {"name": "AWS Cloud Formation", "url": "https://aws.amazon.com/cloudformation/"},
-            {"name": "Serverless Framework", "url": "https://www.serverless.com/"},
-            {"name": "Terraform", "url": "https://www.terraform.io/"}
-        ]
-    },
-    {
-        "title": "Virtualization",
-        "items": [
-            {"name": "Docker", "url": "https://www.docker.com/"},
-            {"name": "Virtual Box", "url": "https://www.virtualbox.org/", "basics": true}
-        ]
-    },
-    {
-        "title": "Version control",
-        "items": [
-            {"name": "Bitbucket", "url": "https://bitbucket.org/"},
-            {"name": "Github", "url": "https://github.com/"},
-            {"name": "Git", "url": "https://git-scm.com/"}
-        ]
-    },
-    {
-        "title": "CI/CD tools",
-        "items": [
-            {"name": "Bitbucket pipelines", "url": "https://bitbucket.org/product/features/pipelines"},
-            {"name": "Github actions", "url": "https://github.com/features/actions"}
-        ]
-    },
-    {
-        "title": "Scripting languages",
-        "items": [
-            {"name": "Java", "url": "https://www.java.com/en/", "basics": true},
-            {"name": "Javascript (Node)", "url": "https://nodejs.org/en/"},
-            {"name": "Python 3", "url": "https://www.python.org/"},
-            {"name": "Typescript", "url": "https://www.typescriptlang.org/"}
-        ]
-    },
-    {
-        "title": "WEB Front-end",
-        "items": [
-            {"name": "Angular 4", "url": "https://angular.io/", "basics": true},
-            {"name": "Astro", "url": "https://astro.build/"},
-            {"name": "CSS", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"},
-            {"name": "HTML", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"},
-            {"name": "Javascript", "url": "https://developer.mozilla.org/en-US/docs/Web/Javascript"},
-            {"name": "Next JS", "url": "https://nextjs.org/"},
-            {"name": "React", "url": "https://reactjs.org/"}
-            
-        ]
-    },
-    {
-        "title": "WEB Back-end",
-        "items": [
-            {"name": "Django", "url": "https://www.djangoproject.com/", "basics": true},
-            {"name": "Express", "url": "https://expressjs.com/"},
-            {"name": "Middy JS", "url": "https://middy.js.org/"},
-            {"name": "Flask", "url": "https://flask.palletsprojects.com/en/2.2.x/", "basics": true},
-            {"name": "Spring boot", "url": "https://spring.io/", "basics": true},
-            {"name": "Openapi (Swagger)", "url": "https://swagger.io/specification/"}
-        ]
-    },
-    {
-        "title": "SaaS Systems",
-        "items": [
-            {"name": "Azure AD", "url": "https://azure.microsoft.com/en-us/products/active-directory", "basics": true},
-            {"name": "Confluence & Jira", "url": "https://www.atlassian.com/software"},
-            {"name": "Contentful", "url": "https://www.contentful.com/", "basics": true},
-            {"name": "Efecte", "url": "https://www.efecte.com/fi/"},
-            {"name": "Emarsys", "url": "https://emarsys.com/"},
-            {"name": "Giosg", "url": "https://www.giosg.com/"},
-            {"name": "LS Retail", "url": "https://www.lsretail.com/products/ls-nav", "basics": true},
-            {"name": "MS Dynamics ERP", "url": "https://dynamics.microsoft.com/fi-fi/nav-erp/", "basics": true},
-            {"name": "Optimove (CDP)", "url": "https://www.optimove.com/"},
-            {"name": "And many other..."}
-        ]
-    },
-    {
-        "title": "Data",
-        "items": [
-            {"name": "Dynamo DB", "url": "https://aws.amazon.com/dynamodb/"},
-            {"name": "Snowflake", "url": "https://www.snowflake.com/en/", "basics": true},
-            {"name": "Postgre SQL", "url": "https://www.postgresql.org/", "basics": true},
-            {"name": "MySql", "url": "https://www.mysql.com/", "basics": true},
-            {"name": "Elastic Search", "url": "https://www.elastic.co/", "basics": true}
-        ]
-    },
-    {
-        "title": "Opensource",
-        "items": [
-            {"name": "Open Maptiles", "url": "https://openmaptiles.org/", "basics": true},
-            {"name": "Open Trip Planner", "url": "https://www.opentripplanner.org/"},
-            {"name": "Pelias", "url": "https://pelias.io/"}
-        ]
-    },
-    {
-        "title": "OS",
-        "items": [
-            {"name": "Linux", "url": ""},
-            {"name": "macOS", "url": ""},
-            {"name": "Windows", "url": ""}
-        ]
-    },
-    {
-        "title": "AWS Infra Services",
-        "items": [
-            {"name": "Api gateway", "url": "https://aws.amazon.com/api-gateway/"},
-            {"name": "Cloudfront", "url": "https://aws.amazon.com/cloudfront/"},
-            {"name": "Cognito", "url": "https://aws.amazon.com/cognito/"},
-            {"name": "Dynamo", "url": "https://aws.amazon.com/dynamodb/"},
-            {"name": "EC2", "url": "https://aws.amazon.com/ec2/"},
-            {"name": "ECS & ECR", "url": "https://aws.amazon.com/ecs/"},
-            {"name": "Lambda", "url": "https://aws.amazon.com/lambda/"},
-            {"name": "Open Search Service", "url": "https://aws.amazon.com/opensearch-service/"},
-            {"name": "RDS", "url": "https://aws.amazon.com/rds/"},
-            {"name": "Route 53", "url": "https://aws.amazon.com/route53/"},
-            {"name": "S3", "url": "https://aws.amazon.com/s3/"},
-            {"name": "SNS", "url": "https://aws.amazon.com/sns/"},
-            {"name": "SQS", "url": "https://aws.amazon.com/sqs/"},
-            {"name": "VPC", "url": "https://aws.amazon.com/vpc/"}
-        ]
-    }
+  {
+    "title": "IAC tools",
+    "items": [
+      { "name": "AWS CDK", "url": "https://aws.amazon.com/cdk/" },
+      {
+        "name": "AWS Cloud Formation",
+        "url": "https://aws.amazon.com/cloudformation/"
+      },
+      { "name": "Serverless Framework", "url": "https://www.serverless.com/" },
+      { "name": "Terraform", "url": "https://www.terraform.io/" }
+    ]
+  },
+  {
+    "title": "Virtualization",
+    "items": [
+      { "name": "Docker", "url": "https://www.docker.com/" },
+      {
+        "name": "Virtual Box",
+        "url": "https://www.virtualbox.org/",
+        "basics": true
+      }
+    ]
+  },
+  {
+    "title": "Version control",
+    "items": [
+      { "name": "Bitbucket", "url": "https://bitbucket.org/" },
+      { "name": "Github", "url": "https://github.com/" },
+      { "name": "Git", "url": "https://git-scm.com/" }
+    ]
+  },
+  {
+    "title": "CI/CD tools",
+    "items": [
+      {
+        "name": "Bitbucket pipelines",
+        "url": "https://bitbucket.org/product/features/pipelines"
+      },
+      { "name": "Github actions", "url": "https://github.com/features/actions" }
+    ]
+  },
+  {
+    "title": "Scripting languages",
+    "items": [
+      { "name": "Java", "url": "https://www.java.com/en/", "basics": true },
+      { "name": "Javascript (Node)", "url": "https://nodejs.org/en/" },
+      { "name": "Python 3", "url": "https://www.python.org/" },
+      { "name": "Typescript", "url": "https://www.typescriptlang.org/" }
+    ]
+  },
+  {
+    "title": "WEB Front-end",
+    "items": [
+      { "name": "Angular 4", "url": "https://angular.io/", "basics": true },
+      { "name": "Astro", "url": "https://astro.build/" },
+      {
+        "name": "CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      },
+      {
+        "name": "HTML",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      },
+      {
+        "name": "Javascript",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/Javascript"
+      },
+      { "name": "Next JS", "url": "https://nextjs.org/" },
+      { "name": "React", "url": "https://reactjs.org/" }
+    ]
+  },
+  {
+    "title": "WEB Back-end",
+    "items": [
+      {
+        "name": "Django",
+        "url": "https://www.djangoproject.com/",
+        "basics": true
+      },
+      { "name": "Express", "url": "https://expressjs.com/" },
+      { "name": "Middy JS", "url": "https://middy.js.org/" },
+      {
+        "name": "Flask",
+        "url": "https://flask.palletsprojects.com/en/2.2.x/",
+        "basics": true
+      },
+      { "name": "Spring boot", "url": "https://spring.io/", "basics": true },
+      {
+        "name": "Openapi (Swagger)",
+        "url": "https://swagger.io/specification/"
+      },
+      { "name": "Hono", "url": "https://hono.dev/" }
+    ]
+  },
+  {
+    "title": "SaaS Systems",
+    "items": [
+      {
+        "name": "Azure AD",
+        "url": "https://azure.microsoft.com/en-us/products/active-directory",
+        "basics": true
+      },
+      {
+        "name": "Confluence & Jira",
+        "url": "https://www.atlassian.com/software"
+      },
+      {
+        "name": "Contentful",
+        "url": "https://www.contentful.com/",
+        "basics": true
+      },
+      { "name": "Efecte", "url": "https://www.efecte.com/fi/" },
+      { "name": "Emarsys", "url": "https://emarsys.com/" },
+      { "name": "Giosg", "url": "https://www.giosg.com/" },
+      {
+        "name": "LS Retail",
+        "url": "https://www.lsretail.com/products/ls-nav",
+        "basics": true
+      },
+      {
+        "name": "MS Dynamics ERP",
+        "url": "https://dynamics.microsoft.com/fi-fi/nav-erp/",
+        "basics": true
+      },
+      { "name": "Optimove (CDP)", "url": "https://www.optimove.com/" },
+      { "name": "And many other..." }
+    ]
+  },
+  {
+    "title": "Data",
+    "items": [
+      { "name": "Dynamo DB", "url": "https://aws.amazon.com/dynamodb/" },
+      {
+        "name": "Snowflake",
+        "url": "https://www.snowflake.com/en/",
+        "basics": true
+      },
+      {
+        "name": "Postgre SQL",
+        "url": "https://www.postgresql.org/",
+        "basics": true
+      },
+      { "name": "MySql", "url": "https://www.mysql.com/", "basics": true },
+      {
+        "name": "Elastic Search",
+        "url": "https://www.elastic.co/",
+        "basics": true
+      }
+    ]
+  },
+  {
+    "title": "Opensource",
+    "items": [
+      {
+        "name": "Open Maptiles",
+        "url": "https://openmaptiles.org/",
+        "basics": true
+      },
+      {
+        "name": "Open Trip Planner",
+        "url": "https://www.opentripplanner.org/"
+      },
+      { "name": "Pelias", "url": "https://pelias.io/" }
+    ]
+  },
+  {
+    "title": "OS",
+    "items": [
+      { "name": "Linux", "url": "" },
+      { "name": "macOS", "url": "" },
+      { "name": "Windows", "url": "" }
+    ]
+  },
+  {
+    "title": "Cloud Platforms",
+    "items": [
+      { "name": "AWS", "url": "https://aws.amazon.com/" },
+      {
+        "name": "Azure",
+        "url": "https://azure.microsoft.com/",
+        "basics": "true"
+      }
+    ]
+  }
 ]

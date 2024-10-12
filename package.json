@@ -8,12 +8,18 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "prettier:fix": "prettier . --write"
+    "prettier:fix": "prettier . --write",
+    "prepare": "husky && husky install"
   },
   "dependencies": {
     "astro": "^2.0.15"
   },
   "devDependencies": {
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "prettier": "3.3.3"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }

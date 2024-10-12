@@ -179,7 +179,7 @@
       {
         "name": "Azure",
         "url": "https://azure.microsoft.com/",
-        "basics": "true"
+        "basics": true
       }
     ]
   }

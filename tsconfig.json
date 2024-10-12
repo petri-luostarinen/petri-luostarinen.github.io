@@ -1,4 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "allowSyntheticDefaultImports": true
+  "allowSyntheticDefaultImports": true,
+  "compilerOptions": {
+    "esModuleInterop": true
+  }
 }
